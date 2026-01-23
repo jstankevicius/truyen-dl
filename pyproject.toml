@@ -1,0 +1,17 @@
+[build-system]
+requires = ["setuptools>=45", "wheel"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "truyen-dl"
+version = "0.1.0"
+dependencies = [
+    "requests",
+    "beautifulsoup4",
+    "ebooklib",
+    "tqdm",
+    "lxml",
+]
+
+[project.scripts]
+truyen-dl = "download:main"
